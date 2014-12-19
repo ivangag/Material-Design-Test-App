@@ -75,9 +75,9 @@ public class NavigationDrawerFragment extends Fragment {
 
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
-//                if(slideOffset<0.6) {
-//                    toolbar.setAlpha(1 - slideOffset);
-//                }
+                if(slideOffset<0.6) {
+                    toolbar.setAlpha(1 - slideOffset);
+                }
             }
         };
         if(!mUserLearnedDrawer&& !mFromSavedInstanceState){
